@@ -1,0 +1,351 @@
+:root {
+    --compliant-green: rgb(92,83,1);
+    --green: rgb(0,133,120);
+    --light-purple: rgb(167,58,100);
+    --purple: rgb(125,35,70);
+    --compliant-orange: rgb(255,198,179);
+    --compliant-orange-bg: rgb(168,42,0);
+    --orange: rgb(255,106,57);
+    --extra-light-grey: #f7f7f7;
+    --light-grey: #F2F2F2;
+    --grey: #808184;
+    --yellow: #FBAB3A;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: NORMAL;
+    font-weight: 500;
+    src: url(../assets/fonts/OpenSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: NORMAL;
+    font-weight: 500;
+    src: url(../assets/fonts/Oswald-Regular.ttf) format('truetype');
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.font-weight-semibold {
+    font-weight: 600;
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.green {
+    color: var(--green);
+}
+
+.bg-extra-light-grey {
+    background-color: var(--extra-light-grey);
+}
+
+.bg-grey {
+    background-color: var(--light-grey);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+    font-weight: 500;
+}
+
+.bg-green {
+    background-color: var(--green);
+    font-weight: 500;
+}
+
+.bg-light-purple {
+    background-color: var(--light-purple);
+    font-weight: 500;
+}
+
+.bg-purple {
+    background-color: var(--purple);
+    font-weight: 500;
+}
+
+.bg-image {
+    height: 254px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/images/mobile-header.jpg');
+}
+
+.bg-image-thank-you {    
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/images/Thank-you-banner.jpg');
+}
+
+#navbarSupportedContent {
+    text-decoration: underline;
+    font-family: "Oswald",sans-serif;
+    color: #333;
+}
+
+.webinar-card-wrapper .webinar-card:not(:last-child) {
+    border-left: none;
+    border-bottom: 2px solid var(--grey);
+}
+
+.webinar-card-wrapper .webinar-card {
+    height: 100%;
+}
+
+.webinar-card-wrapper{
+    height: 100%;
+}
+
+.footer-links li:not(:last-of-type) {
+    border-left: none;
+    border-bottom: 2px solid #FFF;
+}
+
+.footer-links li {
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.rnd-img-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.speaker-img {
+    width: 175px;
+    height: 175px;
+}
+
+.navbar {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.nav-link {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.collapse-line-height {
+    line-height: 1.6;
+}
+
+.rball {
+    vertical-align: top;
+}
+
+.black-box-warning {
+    border: 2px solid black;
+}
+
+#showLessBtnCaret {
+    font-size: 33px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.registration-card {
+    z-index: 1030;
+    width: 100%;
+    position: relative;
+    -ms-flex: 0 0 85%;
+    flex: 0 0 85%;
+    max-width: 85%;
+    margin: auto;
+    border: none;
+}
+
+.registration-card form {
+    font-family: 'Arial', sans-serif;
+}
+
+.registration-card .form-group .form-control {
+    height: calc(1.5em + .2em + 6px);
+    font-size: 12px;
+}
+
+.registration-card  .form-group {
+    line-height: .6;
+}
+
+small {
+    font-size: 12px;
+}
+
+.consent-line-height {
+    line-height: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1055;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+
+#cookieSettingsLink {
+    margin-bottom: .5em;
+    margin-top: 0;
+}
+
+#acceptCookiesBtn {
+    margin-left: 1em;
+}
+
+#cookieBannerContent {
+    margin-bottom: 1em;
+}
+
+#closeBtnLarge {
+    display: none;
+}
+
+#closeBtnLarge span {
+    font-size: 1.5em;
+    margin-left: .75em;
+    line-height: 20px;
+}
+
+#closeBtnSmall {
+    display: inline-block;
+    position: absolute;
+    top: .5em;
+    left: 13.85em;
+    font-size: 1.5em;
+}
+
+.isi-container {
+    max-width: 915px;
+}
+
+.main-content-wrapper{
+    min-height: calc(100vh - 400px - 146px);
+}
+
+.logo-container {
+    position: absolute;
+    top: 1.2em;
+    left: 35%;
+}
+
+/* 
+Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap 
+*/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .reduce-h1-for-phone {
+        font-size: 35px !important;
+    }
+    .reduce-h2-for-phone {
+        font-size: 26px !important;
+    }
+    .reduce-h6-for-phone {
+        font-size: 18px !important;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .bg-image {
+        height: 254px;
+        background-image: url('../assets/images/Hero-Image.jpg');
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .footer-links li:not(:last-of-type) {
+        border-right: 2px solid #FFF;
+        border-bottom: none;
+    }
+    
+    .footer-links li {
+        padding: 0 10px;
+        display: inline-flex;
+    }
+
+    #closeBtnSmall {
+        top: .5em;
+        left: 19em;
+    }
+    
+    .logo-container {
+        left: 45%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .registration-card {
+        position: absolute;
+        top: 7%;
+        left: 63%;
+        width: 331px;
+    }
+
+    .webinar-card-wrapper .webinar-card:not(:last-child) {
+        border-bottom: none;
+        border-right: 2px solid var(--grey);
+    }
+    
+    .webinar-card-wrapper{
+        height: 155px;
+    }
+
+    .modal .modal-dialog {
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        top: 0;
+    }
+
+    #cookieSettingsLink {
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    #acceptCookiesBtn {
+        margin-left: 0;
+    }
+
+    #cookieBannerContent {
+        margin-bottom: 0;
+    }
+
+    #closeBtnLarge {
+        display: inline-block;
+    }
+    
+    #closeBtnSmall {
+        display: none;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+ }
